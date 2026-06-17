@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /Users/aliciagarcia/Downloads/MarketingInfluencias/Genially/Evolucion status)",
+      "Bash(git -C /Users/aliciagarcia/Downloads/InvestigacionUX status)",
+      "Bash(git -C /Users/aliciagarcia/Downloads/MarketingInfluencia-ud1 log --oneline -5)",
+      "Bash(git -C /Users/aliciagarcia/Downloads/MarketingInfluencia-ud1 diff HEAD)",
+      "Bash(cp /Users/aliciagarcia/Downloads/MarketingInfluencias/Genially/Evolucion/index.html /Users/aliciagarcia/Downloads/MarketingInfluencia-ud1/Evolucion/index.html)",
+      "Bash(cp /Users/aliciagarcia/Downloads/MarketingInfluencias/Genially/Evolucion/Imagenes/Prestigio1_NuevaImagen.jpg /Users/aliciagarcia/Downloads/MarketingInfluencia-ud1/Evolucion/Imagenes/Prestigio1_NuevaImagen.jpg)",
+      "Bash(cp /Users/aliciagarcia/Downloads/MarketingInfluencias/Genially/Evolucion/Imagenes/Prestigio2_NuevaImagen.jpg /Users/aliciagarcia/Downloads/MarketingInfluencia-ud1/Evolucion/Imagenes/Prestigio2_NuevaImagen.jpg)",
+      "Bash(git -C /Users/aliciagarcia/Downloads/MarketingInfluencia-ud1 add Evolucion/index.html Evolucion/Imagenes/Prestigio1_NuevaImagen.jpg Evolucion/Imagenes/Prestigio2_NuevaImagen.jpg)",
+      "Bash(git -C /Users/aliciagarcia/Downloads/MarketingInfluencia-ud1 commit -m ' *)",
+      "Bash(git -C /Users/aliciagarcia/Downloads/MarketingInfluencia-ud1 push)"
+    ]
+  }
+}

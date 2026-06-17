@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glosario de acabados y texturas</title>
+<style>
+
+@font-face{font-family:'Balto';font-weight:700;src:url('data:font/truetype;base64,AAEAAAAPAIAAAwBwRkZUTXRFu90AAYv0AAAAHEdERUYAJwItAADQrAAAAB5HUE9Tb9g6OgAA4NgAAKscR1NVQrcJfgMAANDMAAAQCk9TLzJtTYZWAAABeAAAAGBjbWFw7F3i4gAACnQAAAO2Z2FzcP//AAMAANCkAAAACGdseWZwCbzaAAASfAAApihoZWFkAozYkAAAAPwAAAA2aGhlYQf4BgoAAAE0AAAAJGhtdHjCR1GhAAAB2AAACJpsb2NhTiJ3PgAADiwAAARQbWF4cAJwAFUAAAFYAAAAIG5hbWWlbsgMAAC4pAAABylwb3N0N01WtwAAv9AAABDTAAEAAAABAABjwSETXw889QALA+gAAAAAz1C4CgAAAADPUNzK/9L/IAT5A7cAAQAIAAIAAAAAAAAAAQAAAyr/QgAABRH/0v+QBPkAAQAAAAAAAAAAAAAAAAAAAiYAAQAAAicAUgAHAAAAAAACAAAAAQABAAAAQAAAAAAAAAADAkUCvAAFAAACigJYAAAASwKKAlgAAAFeAIABMAAAAgsIAwQFAgICAwAAAAcAAAAAAAAAAAAAAABUUFNQACAAIPsCAyr/QgAAA7cA4CAAAJMAAAAAAfwCvAAAACAADADXAAAAAAAAAU0AAADXAAABaABSAdAAMAJhAAYCZgAGA0YAFwLuABAA+wAwAacANQGnABoByQAiAlsAPgEnADsBlgApAScAOwIT//UCkQAcAgYAKAI8ABACTgATAnMADAJYAB8CbwAcAhAADAJtABMCbwATATsARQE7AEUCWwA2AlsARAJbAEMCZgAdA6QAHQLBAAgCoQA1ArEAIALJADUCXwA1AkMANQLCACACwAA1ATQAOgHcAAoCxAA1AksANQOFADUCxQA1AtEAIAKgADUC0QAgAq4ANQKJAAUCZAATArEAMgKZAAgD1gARAtAADQKiAAsCWwAeAbAAUwITAA4BsAAuAhQAGwJP//0BqABkAiQAEQJPACsCLgAXAk8AFwIwABcBcwAJAjAABAI+ACsBEAAwARD/0gJJACsBEAAwA2kAKwI+ACsCRgAXAk8AKwJPABcBmQArAhQACQGUAAkCPgAmAikADQMjABACTwANAikADQHlABYB5gAoAaUAhgHmAC4CJwAbANcAAAFoAFECLQAXAlQAIQJwAAsBpQCGAn0ABQIGAGQDRQA1AcgAGwI+ACgCTAAyAegAZAGyAD4CWwBAAagAZALGABUBSQBMAccAZAHmACQCPgAvAmYAKQLBAAgCwQAIAsEACALBAAgCwQAIAsEACAPrAAgCsQAgAl8ANQJfADUCXwA1Al8ANQE0//0BNAA6ATT/5AE0//ICzQAIAsUANQLRACAC0QAgAtEAIALRACAC0QAgAlsAPALRACACsQAyArEAMgKxADICsQAyAqIACwKhADUCUwArAiQAEQIkABECJAARAiQAEQIkABECJAARA2YAEQIuABcCMAAXAjAAFwIwABcCMAAXARD/6AEQADABEP/BRAD/6gJGABcCPgArAkYAFwJGABcCRgAXAkYAFwJGABcCWwBAAkYAFwI+ACYCPgAmAj4AJgI+ACYCKQANAk8AKwIpAA0CwQAIAiQAEQLBAAgCJAARAsEACAIkABECsQAgAi4AFwKxACACLgAXArEAIAIuABcCyQA1Ak8AFwLNAAgCTwAXAl8ANQIwABcCXwA1AjAAFwJfADUCMAAXAl8ANQIwABcCXwA1AjAAFwLCACACMAAEAsIAIAIwAAQCwgAgAi8ABALDAAECPv/5ATT/5AEQ/9MBNAAKARD/+QE0//MBEP/hATQAOgEQACEBNAA6ARAAMAMQADoCIQAwAsQANQJJACsCSwA1ARAAMAJLADUBEAAwAksANQEQADACSwA1AbAAMAJPAAUBUQANAsUANQI+ACsCxQA1Aj4AKwLFADUCPgArAsUANQI8ACsC0QAgAkYAFwLRACACRgAXAtEAIAJGABcD2QAgA5EAFwKuADUBmQArAq8ANQGZACsCrgA1AZkAKwKJAAUCFAAJAokABQIUAAkCiQAFAhQACQJkABMBlAAJAmQAEwGUAAkCsQAyAj4AJgKxADICPgAmArEAMgI+ACYCsQAyAj4AJgKxADICPgAmArEAMgI+ACYD1gARAyMAEAKiAAsCKQANAqIACwJbAB4B5QAWAlsAHgHlABYCWwAeAeUAFgImABUD6wAIA2YAEQKUAAUCEwAJAmQAEwGUAAkBEP/SAjUAZAI1AGQCGABkAVgAZAGkAGQBjQBkAjQAZAI/AGQD1gARAyMAEAPWABEDIwAQA9YAEQMjABACXwA1AjAAFwKiAAsCKQANAqIACwIpAA0AYQAAAn4AKQNVACkBAAAtAQAALQEAAC0B2gAtAdoALQHaAC0BuAAyAbgAMgGuAC0DOAA7BNYAFwFlACgBZQAvAkcABwOKAAgClgAPAtUAKwK0ACUC0AAAAtAANQLQABQC0AA1AtAAYQLQAFIC0ABSAtAAYQJbAEUCWwAzAlsARAJbAEMCWwBDA0UANQKEAAkChAAJAAAAAAFNAAABSABkAtEBIQLRANYC0QDVAtEAsgLRALIC0QDBAtEAsgLRANgC0QDAAtEBIQLRAPsBvwAPAeYAJAK3ACACIAAqAl4AFgJsABQCkwANAnYAIAKPAB0CKwANAowAFAKPABUBpAA1AaQAGgGwAFMBsAAuAeYAKAHmAC4BZQAoAWUALwI+ACgCPgAvAocADgNwABgFEQAYAhMADgITAA4BpQCGAaUAhgM7ACQCnQAHAugAFQFoAFECZgApAlsAPgJbAEUCWwBAAlsAQAJbADwCWwBEAlsANgJbAEMCWwBDAlsAQwJbADMCWwBEAoUABAItABcCcgAiAogABAPGABMCuAAQAcgAQQEnAAACTgAUAk4APwJRACMCTgAaAk4AEgJOACACTgAaAk4AKwJOABICTgARAZ0AMQGdABUBnQBJAZ0AJQGdABgBnQAfAk4AEQM+ACIEvAAcAScAOwEnADsBJwA8AScAPAJOADkCTgBAAk4AOwJOADsCTgA3Ak4APwJOADECTgA+Ak4APgJOAD4CTgAuAk4APwJOAA4CTgAoAk4AJQJOAAsCTgAEAk4ACwJOACkCTgAJAk4AFAJOADUCTgAXAk4AFgJOAA4CTgAbAk4AFwJOACECTgAQAk4ADgGdADMBnQAXAZ0ASQGdACUBnQAYAZ0AHwJOAA4DPgAiBLwAHAJOADkCTgBAAk4AOwJOADsCTgA3Ak4APwJOADECTgA+Ak4APgJOAD4CTgAuAk4APwJOAAgCTgAoAk4AIQJOAAgCTgAFAk4ACgJOAAUBqQASAVMAGgFvAAkBggAOAZcACgGEABQBkgARAVgACgGOAAoBkgAMAakAEgFTABoBdQAJAYIADgGXAAoBhAAUAZUAEQFYAAoBlQAKAZUADAHYACoBggAyAaQAIQGxACYBxgAiAbMALAHEACkBhwAiAcQAIgHEACQB2AAqAYIAMgGkACEBsQAmAcYAIgGzACwBxAApAYcAIgHEACIAJAAAAAAAAwAAAAMAAAAcAAEAAAAAAawAAwABAAAAHAAEAZAAAABgAEAABQAgAH4AowCrALEAtAC4ALsBBwEbASMBMwE3AUgBWwFhAX4BkgH9AhsCNwLHAt0ehR69HvMe+SAJIBQgGiAeICIgJiAwIDogRCCpIKwhICEiIZMhmSISIkgiYCJlJMX7Av//AAAAIACgAKUArgC0ALYAugC/AQoBHgEmATYBOQFKAV4BZAGSAfwCGAI3AsYC2B6AHrwe8h74IAkgEyAYIBwgICAmIDAgOSBEIKkgrCEgISIhkCGWIhIiSCJgImQkxfsB////4//C/8H/v/+9/7z/u/+4/7b/tP+y/7D/r/+u/6z/qv+X/y7/FP75/mv+W+K54oPiT+JL4TzhM+Ew4S/hLuEr4SLhGuER4K3gq+A44Dffyt/I31DfG98E3wHcogZnAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgIKAAAAAAEAAAEAAAAAAAAAAAAAAAAAAAABAAIAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAADAAQABQAGAAcACAAJAAoACwAMAA0ADgAPABAAEQASABMAFAAVABYAFwAYABkAGgAbABwAHQAeAB8AIAAhACIAIwAkACUAJgAnACgAKQAqACsALAAtAC4ALwAwADEAMgAzADQANQA2ADcAOAA5ADoAOwA8AD0APgA/AEAAQQBCAEMARABFAEYARwBIAEkASgBLAEwATQBOAE8AUABRAFIAUwBUAFUAVgBXAFgAWQBaAFsAXABdAF4AXwBgAGEAAAB8AH0AfwCBAIkAjgCUAJkAmACaAJwAmwCdAJ8AoQCgAKIAowClAKQApgCnAKkAqwCqAKwArgCtALIAsQCzALQBTgBvAGQAZQBoAVAAcgCXAG0AagFZAHEAaQFkAH4AkAAAAHABZQFmAGYAAAAAAAAAAAAAAAAAawB1AAAAngCwAHcAYwAAAAABKQFjAAAAbAB2AVEAYgB4AHsAjQEAAQEBRgFHAUsBTAFIAUkArwAAALcBIgFVAVcBUwFUAWgBaQFPAHMBSgFNAVIAegCCAHkAgwCAAIUAhgCHAIQAiwCMAAAAigCSAJMAkQDjATEBNwBuATMBNAE1AHQBOAE2ATIAAAAAAAAAAAAAAAAAFgAqAFwAmADqAT4BTAFuAZABrgHCAdIB4AHsAfoCMAJIAnYCrgLKAvgDMgNKA5IDzAPeA/QEBgQaBC4EVgTABNoFBgU0BVYFbgWEBbQFzAXaBfIGDAYcBjgGTgZ4BpYG0Ab0BywHPgdYB2oHhgegB7YHzgfgB+4IAAgSCCAILghkCJQIvgjuCRoJPAmQCa4JwAneCfYKBAoyClAKdgqmCtYK8AsqC0wLagt8C5gLsAvQC+YMGAwmDFgMegx6DJAMwAz2DRoNLA2EDZYN7A4cDjYOig6YDr4O2g7oDwYPEg80D1gPcg+cD7wP3BAAEDgQXhCUELgRABEeETwRXhGCEZYRqhHCEdoSBBI6EmwSnBLQExgTThNoE6gTyhPsFBIUOBRUFHIUqBTmFSQVZhW8Ff4WTBaeFuIXFBdGF3wXshfGF9oX8hgKGEgYhBiyGOAZEhlWGYgZoBneGgIaKBpQGnoaohrUGwIbIhtgG4ob0BwAHEocgByyHOYdFh1QHYQdsB3sHhYeTh5sHp4exh8AHx4fTh96H7of3CASIFQguCDwIUohhCHiIgYiLCJYIoQimCKsIsoi5iMIIzAjRCNSI3AjmiO+I+Aj9iQKJCQkOiRUJGwkgiSWJLAkyCTmJQolKiVQJXIlmiW6JeImFCZCJn4mtCbqJx4nSieMJ7Yn1igEKCgoVih6KLgo+ilMKZ4p4ComKkIqbiqIKrIq7CsqK0wrciueK8wsBCw6LGIsjiy+LPAtGC1ALWAtjC2sLcot5i4ELiAuQi5iLpIuvi8WL1Yvmi+0L94v9jAIMBowMDA8MFoweDCeMLIw1jD6MR4xQjFqMZIxyDISMi4yVjKKMsoyyjLYMuYy9jMGMxYzMDNKM2IzeDOUM64zxjQ4NEg0WDRmNJg00DUSNTQ1SjViNXo1kDWoNcA12DXwNf42PjZcNnQ2jjbcNwo3MjcyNzI3QjdQN143cjeEN5Y3rjfUN+I39DgCOCY4PjhiOJY4rjjaORQ5MDlcOZQ5rDnyOjA6UDpwOoI6lDrGOvg7CDsYOzI7TDt+O8o8NDxCPFA8XjxyPNo9ND1SPWg9kj2mPbQ90D3oPgI+Fj4oPjw+VD5uPq4+zD8KPzo/cD+SP8Y/+EAcQBxASkBiQI5AxkDiQQxBQEFYQZ5B0kH0QhZCKEI6QmxCnkLQQyBDkkOeQ65DwEPWQ+pD+EQURCxERkRaRGxEgESYRLJE8kUQRU5FfkWwRdRGBkY6RmpGwEbwRwhHMkdqR4ZHsEfoSABIRkh+SJ5IvkjQSOJJFElGSXhJvEocSjBKPkpaSnJKjEqgSrJKxkreSvhLOEtWS5RLxkv6TB5MUEyKTOJNDE0kTUxNfE2WTb5N7k4ETkJOcE6aTrJO2k8KTyJPSk96T5BPzk/8UCZQPlBmUJZQsFDYUQhRHlFcUYpRtFHMUfRSJFI8UmRSlFKoUuZTFAACAFIAAAEXArwAAwAJAAA3MxUjAzMVAyMDWLi4BsUhhCCvrwK8oP7MATQAAAIAMAGkAZ8CvAADAAcAABMzAyMTMwMjMJsLhcqaCoUCvP7oARj+6AACAAYAAAJUApoAAwAfAAABNyMPASM3MzcjNzM3MwczNzMHMwcjBzMHIwcjNyMHIwFVEmISjGEQYRJhEGEYfBhiGHwYYRBhEmEQYRh8GGIYfAENgIBsbIBsoaGhoWyAbKGhoQAAAQAG/4kCRQMRACcAABc1LgEnNx4BMzI2NCYvAS4BNTQ2NzUzFRYXByYjIhUUHwEWFRQGBxXoR3ckbjBWMScuJC9MXVlgXZJ5RmxISVZCTs9uXXduC0g0YzsyIjghCxEVZFJMbxFvbRRaYFM4MQwRLalRchJvAAAABQAX//EDLwKpAAMAFQAdAC8ANwAAATMBIwM1NDc2MzIXFh0BFAcGIyInJjc1NCIdARQyFzU0NzYzMhcWHQEUBwYjIicmNzU0Ih0BFDICVGL+PGJ5MjNUUzMzMzNTVDMy8G5utjIzVFMzMzMzU1QzMvBubgKa/WYB7ARQNTQ0NVAEUDU0NDVQBGNjBGPfBE81NTU0UARQNTQ0NVAEY2MEYwAAAA==') format('truetype');}
+@font-face{font-family:'Balto';font-weight:400;src:url('data:font/truetype;base64,AAEAAAAPAIAAAwBwRkZUTXRFu+kAAXpcAAAAHEdERUYAJwItAADYMAAAAB5HUE9Ta1kI4QAA6FwAAJH+R1NVQrcJfgMAANhQAAAQCk9TLzJsCYMIAAABeAAAAGBjbWFw7F3i4gAACnQAAAO2Z2FzcP//AAMAANgoAAAACGdseWb3hp67AAASfAAAraxoZWFkAljYsAAAAPwAAAA2aGhlYQfFBf4AAAE0AAAAJGhtdHh38Wu5AAAB2AAACJxsb2NhGyJGJAAADiwAAARQbWF4cAJwAFsAAAFYAAAAIG5hbWW5iOI8AADAKAAABylwb3N0N8pWfgAAx1QAABDTAAEAAAABAAAymbaBXw889QALA+gAAAAAz1C4FQAAAADPUNzL/8f/LwTRA7wAAAAIAAIAAAAAAAAAAQAAAyr/QgAABPL/x/+iBNEAAQAAAAAAAAAAAAAAAAAAAicAAQAAAicAWAAHAAAAAAACAAAAAQABAAAAQAAAAAAAAAADAhsBkAAFAAACigJYAAAASwKKAlgAAAFeAEcBJwAAAgsFAwQFAgICAwAAAAcAAAAAAAAAAAAAAABUUFNQAEAAIPsCAyr/QgAAA7wA0SAAAJMAAAAAAewCvAAAACAAA') format('truetype');}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ─────────────────────────────────────────────────────────
+   TOKENS
+   Key insight for the rule alignment:
+   Every letter glyph has a different natural descender.
+   We FORCE the letter zone to a fixed height via --ltr-zone,
+   so the rule always lands at the same pixel from top.
+   ───────────────────────────────────────────────────────── */
+:root {
+  --col-w:      300px;
+  --col-pad:    28px;
+  --ltr-size:   100px;
+  --ltr-zone:   110px;
+  --img-h:      420px;       /* FIXED image height — same for ALL columns */
+  --img-open:   200px;        /* shrunken image height on hover */
+  --track-pad:  16px;
+  --header-h:   260px;
+  --ease:       cubic-bezier(0.16, 1, 0.3, 1);
+  --t-img:      0.55s;
+  --t-txt:      0.38s;
+}
+
+html, body { height: 100%; overflow: hidden; background: #fff; }
+
+/* ─── HEADER ─────────────────────────────────────── */
+#header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: var(--header-h);
+  background: #fff;
+  z-index: 20;
+  display: flex;
+  align-items: flex-end;
+  padding: 40px 56px 30px;
+}
+
+.hd-title {
+  font-family: 'Balto', sans-serif;
+  font-weight: 700;
+  /* Large — roughly 2/3 the size of the column letter, visually dominant */
+  font-size: 72px;
+  line-height: 1.0;
+  color: #111;
+  flex: 0 0 auto;
+  letter-spacing: -2px;
+}
+
+.hd-sub {
+  font-family: 'Balto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  margin-left: auto;
+  text-align: left;
+  padding-bottom: 4px;
+  max-width: 380px;
+}
+
+/* ─── SCROLL WRAPPER ─────────────────────────────── */
+#glos {
+  font-family: 'Balto', sans-serif;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+#wrap {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 100%;
+  height: 100%;
+  padding-top: var(--header-h);
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  cursor: grab;
+}
+#wrap::-webkit-scrollbar { display: none; }
+#wrap.grabbing { cursor: grabbing; }
+
+#track {
+  display: flex;
+  height: 100%;
+  width: max-content;
+  padding: var(--track-pad) 56px var(--track-pad);
+  align-items: flex-end;
+  box-sizing: border-box;
+}
+
+/* ═══════════════════════════════════════════════════
+   COLUMN ANATOMY (closed state, top→bottom):
+     .ltr-zone   fixed-height letter area
+     .rule       1 px black line
+     .body       flex column, justify-content:flex-end
+       .tblock   hidden text, revealed on hover (above img)
+       .img-wrap  fixed height image, BOTTOM-anchored
+                  shrinks upward on hover
+   ═══════════════════════════════════════════════════ */
+.col {
+  position: relative;
+  flex-shrink: 0;
+  width: var(--col-w);
+  border-left: 1px solid #111;
+  padding: 0 var(--col-pad);
+  /* min-height = ltr-zone + rule + img. Grows on hover to fit text. */
+  min-height: calc(var(--ltr-zone) + 1px + var(--img-h));
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+}
+.col:first-child { border-left: none; padding-left: 0; }
+
+/* ── Letter zone ── */
+.ltr-zone {
+  flex-shrink: 0;
+  height: var(--ltr-zone);
+  display: flex;
+  align-items: flex-end;
+  overflow: visible;
+  padding-bottom: 10px;
+}
+
+.ltr {
+  font-family: 'Balto', sans-serif;
+  font-weight: 700;
+  font-size: var(--ltr-size);
+  line-height: 1;
+  color: #111;
+  letter-spacing: -3px;
+  display: block;
+}
+
+/* ── Horizontal rule ── */
+.rule {
+  flex-shrink: 0;
+  width: 100%;
+  height: 1px;
+  background: #111;
+}
+
+/* ── Body: the zone below the rule.
+   flex-end so image always sits at the bottom,
+   text block appears above it when revealed. ── */
+.col-body {
+  position: relative;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;  /* image always at bottom */
+  overflow: visible;
+}
+
+/* ── Image wrapper — BOTTOM-ANCHORED.
+   Default: --img-h tall (visible).
+   Hover: shrinks to --img-open.
+   Because it's at the bottom of .col-body and col-body
+   is overflow:hidden, the bottom edge stays fixed and
+   the top edge moves downward as height decreases. ── */
+.img-wrap {
+  flex-shrink: 0;
+  width: 100%;
+  height: var(--img-h);
+  overflow: hidden;
+  transition: height var(--t-img) var(--ease);
+}
+.col:hover .img-wrap {
+  height: var(--img-open);
+}
+
+.imgph {
+  width: 100%;
+  height: 100%;
+  background-image:
+    linear-gradient(45deg,  #e2e2e2 25%, transparent 25%),
+    linear-gradient(-45deg, #e2e2e2 25%, transparent 25%),
+    linear-gradient(45deg,  transparent 75%, #e2e2e2 75%),
+    linear-gradient(-45deg, transparent 75%, #e2e2e2 75%);
+  background-size:     16px 16px;
+  background-position: 0 0, 0 8px, 8px -8px, -8px 0;
+  background-color:    #ececec;
+}
+
+/* ── Text block — sits above the image in col-body,
+   hidden at max-height:0, slides up into view on hover. ── */
+.tblock {
+  flex-shrink: 0;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height var(--t-img) var(--ease);
+}
+.col:hover .tblock {
+  max-height: 500px;
+}
+
+.tblock-inner {
+  padding: 16px 0 14px;
+}
+
+/* Term name */
+.tname {
+  display: block;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.tname.it .tname-inner { font-style: italic; }
+
+.tname-inner {
+  display: block;
+  font-family: 'Balto', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.05;
+  letter-spacing: -0.8px;
+  color: #111;
+  transform: translateY(100%);
+  transition: transform var(--t-txt) var(--ease) 0.05s;
+}
+.col:hover .tname-inner {
+  transform: translateY(0);
+}
+
+/* Description */
+.tdesc {
+  display: block;
+  overflow: hidden;
+}
+
+.tdesc-inner {
+  display: block;
+  font-family: 'Balto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.65;
+  color: #333;
+  transform: translateY(100%);
+  transition: transform var(--t-txt) var(--ease) 0.12s;
+}
+.col:hover .tdesc-inner {
+  transform: translateY(0);
+}
+
+
+/* ═══════════════════════════════════════════════════
+   MULTI-TERM COLUMN
+   Each scol mirrors .col exactly:
+     spacer (clears letter+rule) → img-wrap (full height) → tblock (hidden behind img)
+   On hover: img shrinks upward, tblock revealed below.
+   ═══════════════════════════════════════════════════ */
+.mcol {
+  position: relative;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  border-left: 1px solid #111;
+  width: var(--col-w);
+  height: calc(var(--ltr-zone) + 1px + var(--img-h));
+  overflow-x: clip;
+  overflow-y: visible;
+  transition: width 0.5s var(--ease);
+}
+.mcol:first-child { border-left: none; }
+.mcol:hover {
+  width: var(--mcol-w, var(--col-w));
+}
+
+.mltr {
+  font-family: 'Balto', sans-serif;
+  font-weight: 700;
+  font-size: var(--ltr-size);
+  line-height: 1; color: #111;
+  position: absolute;
+  top: 0; left: var(--col-pad);
+  letter-spacing: -3px;
+  pointer-events: none; z-index: 3;
+}
+.mrule {
+  position: absolute;
+  top: var(--ltr-zone);
+  left: 0; right: 0; height: 1px;
+  background: #111; z-index: 2;
+}
+
+.scol {
+  flex-shrink: 0;
+  width: var(--col-w);
+  padding: 0 var(--col-pad);
+  height: calc(var(--ltr-zone) + 1px + var(--img-h));
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #111;
+  overflow: visible;
+}
+.scol:first-child { border-left: none; }
+
+/* Clears the shared letter + rule */
+.scol-spacer {
+  flex-shrink: 0;
+  height: calc(var(--ltr-zone) + 1px);
+}
+
+/* scol img-wrap handled below in scol-content section */
+
+/* scol-content: contains text (in flow) + image (absolute on top) */
+.scol-content {
+  position: relative;
+  flex: 1 1 auto;
+  overflow: hidden;
+}
+
+/* Text: same slide-up animation as single col */
+.scol .tblock {
+  overflow: visible;
+  max-height: none;
+}
+.scol .tname-inner {
+  transform: translateY(100%);
+  transition: transform var(--t-txt) var(--ease);
+}
+.scol .tdesc-inner {
+  transform: translateY(100%);
+  transition: transform var(--t-txt) var(--ease) 0.08s;
+}
+.mcol:hover .scol .tname-inner { transform: translateY(0); }
+.mcol:hover .scol .tdesc-inner { transform: translateY(0); }
+
+/* Image: absolute, anchored to BOTTOM, shrinks upward → top edge moves down */
+.scol .img-wrap {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: var(--img-h);
+  overflow: hidden;
+  transition: height var(--t-img) var(--ease);
+}
+.mcol:hover .scol .img-wrap {
+  height: var(--img-open);
+}
+
+</style>
+</head>
+<body>
+<div id="glos">
+
+  <!-- HEADER -->
+  <div id="header">
+    <div class="hd-title">Glosario de acabados<br>y texturas</div>
+    <div class="hd-sub">Deslízate hacia abajo y mantén en ratón<br>sobre el término para descubrir más</div>
+  </div>
+
+  <!-- COLUMNS -->
+  <div id="wrap">
+    <div id="track"></div>
+  </div>
+
+</div>
+<script>
+const D = [
+  {l:'a', t:[{n:'Acabados',   it:0, d:'Conjunto de tratamientos aplicados al material impreso para modificar su aspecto, textura o comportamiento que aportan diferenciación y valor.'}]},
+  {l:'b', t:[{n:'Barniz',     it:0, d:'Capa transparente aplicada sobre zonas específicas o sobre toda la superficie para proteger, aportar brillo, mate o contraste visual.'}]},
+  {l:'d', t:[{n:'Debossing',  it:1, d:'Técnica en la que el diseño se hunde en el papel y crea un efecto sobrio y refinado.'}]},
+  {l:'e', t:[
+    {n:'Efectos',   it:0, d:'Recursos gráficos o materiales que alteran la percepción del diseño y refuerza su impacto.'},
+    {n:'Embossing', it:1, d:'Técnica de relieve en la que el diseño sobresale hacia fuera del papel.'}
+  ]},
+  {l:'f', t:[{n:'Foil', it:1, d:'Aplicación de una lámina metálica mediante presión y calor que genera brillos intensos y reflejos, normalmente en dorado, plata u otros tonos metálicos. Es un acabado asociado a productos premium y ediciones especiales.'}]},
+  {l:'i', t:[
+    {n:'Impresión digital', it:0, d:'Sistema de impresión directo desde archivo digital, sin planchas, que permite tiradas cortas, personalización y rapidez, muy habitual en prototipos y ediciones limitadas.'},
+    {n:'Impresión offset',  it:0, d:'Sistema de impresión tradicional mediante planchas para grandes tiradas, con alta fidelidad de color y consistencia en la producción.'}
+  ]},
+  {l:'l', t:[{n:'Laminado brillante', it:0, d:'Película transparente aplicada sobre el papel que aporta brillo, protección y mayor intensidad cromática, además de resistencia al desgaste.'}]},
+  {l:'p', t:[
+    {n:'Papel estucado',    it:0, d:'Papel recubierto con una capa de estuco que proporciona una superficie lisa y uniforme, ideal para impresiones de alta calidad y colores definidos.'},
+    {n:'Papel liso',        it:0, d:'Papel sin textura marcada, de superficie homogénea, que permite una lectura clara del diseño y funciona bien en múltiples sistemas de impresión.'},
+    {n:'Papel mate suave',  it:0, d:'Papel tratado para ofrecer una sensación táctil aterciopelada y sin brillo, muy valorado en packaging premium por su elegancia y sobriedad.'},
+    {n:'Papel metálico',    it:0, d:'Papel con acabado metalizado que refleja la luz y aporta un aspecto brillante o industrial. Se usa para destacar y generar impacto visual.'},
+    {n:'Papel no estucado', it:0, d:'Papel sin recubrimiento, de textura más porosa y natural, asociado a productos artesanales, ecológicos u orgánicos.'},
+    {n:'Papel reciclado',   it:0, d:'Papel fabricado a partir de fibras recicladas que suele presentar una textura más orgánica e irregular y que se asocia a sostenibilidad y naturaleza.'}
+  ]},
+  {l:'r', t:[{n:'Relieve', it:0, d:'Técnica que altera la superficie del papel y crea volúmenes perceptibles al tacto para reforzar elementos clave del diseño.'}]},
+  {l:'t', t:[{n:'Textura', it:0, d:'Características físicas que aportan sensación táctil y visual, como grano, porosidad o irregularidades, e influye en la percepción del producto.'}]}
+];
+
+const COL_W = 300;
+const track = document.getElementById('track');
+const wrap  = document.getElementById('wrap');
+
+/* ── helper: build imgph wrapped in img-wrap ── */
+function imgWrap(url) {
+  if (url) {
+    return `<div class="img-wrap"><img src="${url}" alt="" style="width:100%;height:100%;object-fit:cover;display:block;"></div>`;
+  }
+  return `<div class="img-wrap"><div class="imgph"></div></div>`;
+}
+
+/* ── helper: build text block ── */
+function textBlock(n, it, d) {
+  return `
+    <div class="tblock">
+      <div class="tblock-inner">
+        <span class="tname${it ? ' it' : ''}">
+          <span class="tname-inner">${n}</span>
+        </span>
+        <span class="tdesc">
+          <span class="tdesc-inner">${d}</span>
+        </span>
+      </div>
+    </div>`;
+}
+
+/* ── BUILD DOM ── */
+const IMGS = {"Acabados": "https://inspgr.id/app/uploads/2017/03/branding-crude-feature-805x568.jpg", "Barniz": "https://i.pinimg.com/736x/3f/e2/fe/3fe2fe6a90f6cdfa321b0fe53e85302e.jpg", "Debossing": "https://i.pinimg.com/736x/bb/8a/d8/bb8ad8c4fa55d93ed561ef95bb4eda04.jpg", "Efectos": "https://i.pinimg.com/736x/c4/87/51/c48751b4502051c831b26d06d5b4cfd1.jpg", "Embossing": "https://i.pinimg.com/1200x/fc/c5/3b/fcc53b15c7416c7822c1e5dad4ba78c0.jpg", "Foil": "https://i.pinimg.com/736x/5a/19/76/5a1976a10952393ce82c4675cb7b9a4d.jpg", "Impresión digital": "https://i.pinimg.com/736x/fd/92/6b/fd926b8f49bc30ff774f76b8fd27b517.jpg", "Impresión offset": "https://i.pinimg.com/736x/bf/72/25/bf7225d214225cbae3d41b977e16128f.jpg", "Laminado brillante": "https://edilux.es/wp-content/uploads/2018/03/laminado-acabados.jpg", "Papel estucado": "https://www.proprintweb.com/cms/wp-content/uploads/2022/06/Papel-estucado-brillante.jpeg", "Papel liso": "https://i.pinimg.com/1200x/2c/3d/9c/2c3d9c7b71d1359330bbadcb10e81461.jpg", "Papel mate suave": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e3d419241026143.694c0d16ee08c.jpg", "Papel metálico": "https://i.pinimg.com/736x/24/9b/6a/249b6ab7b0a0b2d7052484f621aac5c7.jpg", "Papel no estucado": "https://i.pinimg.com/1200x/22/49/fa/2249faa4fdf307bfdd9b69410925fbc5.jpg", "Papel reciclado": "https://mir-s3-cdn-cf.behance.net/project_modules/max_632_webp/9df628202221007.66839a932e9b2.jpg", "Relieve": "https://i.pinimg.com/736x/bb/8a/d8/bb8ad8c4fa55d93ed561ef95bb4eda04.jpg", "Textura": "https://i.pinimg.com/1200x/c6/1b/96/c61b9602afec148e5458203589c613a4.jpg"};
+
+D.forEach(e => {
+  if (e.t.length === 1) {
+
+    /* SINGLE-TERM COL
+       Structure inside .col-body: text (hidden, above) → image (visible, below, bottom-anchored) */
+    const c = document.createElement('div');
+    c.className = 'col';
+    c.innerHTML = `
+      <div class="ltr-zone"><span class="ltr">${e.l}</span></div>
+      <div class="rule"></div>
+      ${textBlock(e.t[0].n, e.t[0].it, e.t[0].d)}
+      <div class="col-body">
+        ${imgWrap(IMGS[e.t[0].n])}
+      </div>`;
+    track.appendChild(c);
+
+  } else {
+
+    /* MULTI-TERM MCOL */
+    const m = document.createElement('div');
+    m.className = 'mcol';
+    m.style.setProperty('--mcol-w', (e.t.length * COL_W) + 'px');
+    m.innerHTML = `<span class="mltr">${e.l}</span><div class="mrule"></div>`;
+
+    e.t.forEach(t => {
+      const s = document.createElement('div');
+      s.className = 'scol';
+      s.innerHTML = `
+        <div class="scol-spacer"></div>
+        <div class="scol-content">
+          ${textBlock(t.n, t.it, t.d)}
+          ${imgWrap(IMGS[t.n])}
+        </div>`;
+      m.appendChild(s);
+    });
+
+    track.appendChild(m);
+  }
+});
+
+/* ── WHEEL → HORIZONTAL ── */
+wrap.addEventListener('wheel', e => {
+  e.preventDefault();
+  wrap.scrollLeft += e.deltaY + e.deltaX;
+}, { passive: false });
+
+/* ── DRAG ── */
+let dn = 0, sx = 0, sl = 0;
+wrap.addEventListener('mousedown', e => {
+  dn = 1; wrap.classList.add('grabbing');
+  sx = e.pageX; sl = wrap.scrollLeft;
+});
+document.addEventListener('mouseup', () => { dn = 0; wrap.classList.remove('grabbing'); });
+wrap.addEventListener('mousemove', e => {
+  if (!dn) return;
+  e.preventDefault();
+  wrap.scrollLeft = sl - (e.pageX - sx) * 1.1;
+});
+</script>
+</body>
+</html>
